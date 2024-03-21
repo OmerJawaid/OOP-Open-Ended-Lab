@@ -1,5 +1,4 @@
 #pragma once
-#include"Course.h"
 class Teacher
 {
     private:
