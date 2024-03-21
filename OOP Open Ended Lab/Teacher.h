@@ -6,6 +6,7 @@ class Teacher
     string name,email,coursesTaught;
     vector<Course>coursesAssigned;
     public:
+        Teacher();
     Teacher(string n,int ID,string em) : name(n), teacherID(ID) , email(em){}
 
     void assignCourses(Course course)
