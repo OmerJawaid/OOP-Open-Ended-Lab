@@ -7,7 +7,23 @@ class Course
     public:
         Teacher teacher;
     vector<Student>studentEnrolled;
+    Course(string name,int code) : courseName(name),courseCode(code){}
+   string getcoursename()
+   {
+    return courseName;
+   }
+   int getcoursecode()
+   {
+    return courseCode;
+   }
 
+   void viewStudents()
+   {
+      for(int i=0;i<studentEnrolled.size();i++)
+      {
+        cout<<studentEnrolled[i].getstudentname()<<endl;
+      }
+   }
     void addStudent(Student student) {
 		studentEnrolled.push_back(student);
     };
@@ -19,6 +35,5 @@ class Course
                 return;
             }
     }
-		cout << "Student not found" << endl;
-    };
+		cout << "Student not found" << endl; 
 };
